@@ -1,10 +1,11 @@
 {
 	"include": ["."],
+  "exclude": ["dist", "build", "node_modules"],
   "compilerOptions": {
 		"jsx": "react-jsx",
     "target": "ESNext",
     "module": "ESNext",
-    "types": ["vite/client", "unplugin-icons/types/react"],
+    "types": [],
     "moduleResolution": "Node",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "strict":                           true,
@@ -17,11 +18,5 @@
     "useDefineForClassFields":          true,
     "allowSyntheticDefaultImports":     true,
     "forceConsistentCasingInFileNames": true,
-    "experimentalDecorators":           true,
   },
-	"paths": {
-		"@pages/*":      ["pages/*"],
-		"@modules/*":    ["modules/*"],
-		"@components/*": ["components/*"],
-	}
 }

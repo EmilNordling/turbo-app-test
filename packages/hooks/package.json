@@ -1,12 +1,9 @@
 {
-  "name": "ui",
+  "name": "hooks",
   "version": "0.0.0",
   "private": true,
   "main": "./mod.tsx",
   "types": "./mod.tsx",
-  "dependencies": {
-    "hooks": "*"
-  },
   "devDependencies": {
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",

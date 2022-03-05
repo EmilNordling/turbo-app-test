@@ -17,11 +17,5 @@
     "useDefineForClassFields":          true,
     "allowSyntheticDefaultImports":     true,
     "forceConsistentCasingInFileNames": true,
-    "experimentalDecorators":           true,
   },
-	"paths": {
-		"@pages/*":      ["pages/*"],
-		"@modules/*":    ["modules/*"],
-		"@components/*": ["components/*"],
-	}
 }
