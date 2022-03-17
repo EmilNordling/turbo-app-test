@@ -1,17 +1,17 @@
-const resolutions = new Map<symbol, Resolution>();
+const resolutions = new Map<symbol, ResolutionContext>();
 
-let currentContext: Resolution | null = null;
+let currentContext: ResolutionContext | null = null;
 
-export function createResolutionContext(): Resolution {
-  const id = Symbol();
-  const resolution = new Resolution(id);
-  resolutions.set(id, resolution);
+export function createResolutionContext(): ResolutionContext {
+	const id = Symbol();
+	const resolution = new ResolutionContext(id);
+	resolutions.set(id, resolution);
 
-  return resolution;
+	return resolution;
 }
 
-export class Resolution {
-  constructor(readonly id: symbol, readonly singletons = []) {
-    // Empty
-  }
+export class ResolutionContext {
+	constructor(public readonly id: symbol, public readonly singletons = []) {
+		// Empty
+	}
 }

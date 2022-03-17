@@ -1,0 +1,156 @@
+/* The goal of a reset stylesheet is to reduce browser inconsistencies in things
+like default line heights, margins and font sizes of headings, and so on. */
+
+/*
+  More intuitive box-sizing model
+    reason: https://www.joshwcomeau.com/css/custom-css-reset/#digit-box-sizing-model
+*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/*
+  Remove default margin from all elements
+    reason: https://www.joshwcomeau.com/css/custom-css-reset/#digit-remove-default-margin
+*/
+* {
+	margin: 0;
+}
+
+/*
+  Allow percentage-based heights in the application
+    reason: https://www.joshwcomeau.com/css/custom-css-reset/#digit-percentage-based-heights
+*/
+html,
+body,
+#root {
+	height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  - Add accessible line-height
+    reason: https://www.joshwcomeau.com/css/custom-css-reset/#digit-tweaking-line-height
+  - Improve text rendering
+    reason: https://www.joshwcomeau.com/css/custom-css-reset/#digit-font-smoothing
+*/
+body {
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/*
+  Sensible media defaults
+    reason: https://www.joshwcomeau.com/css/custom-css-reset/#digit-sensible-media-defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/*
+  Inherit fonts for form controls
+    reason: https://www.joshwcomeau.com/css/custom-css-reset/#digit-inherit-fonts-for-form-controls
+*/
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/*
+  Avoid text overflows
+    reason: https://www.joshwcomeau.com/css/custom-css-reset/#digit-word-wrapping
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+	margin: 0;
+}
+
+/*
+  Word wrapping
+    reason: https://www.joshwcomeau.com/css/custom-css-reset/#digit-word-wrapping
+*/
+menu,
+ol,
+ul {
+	list-style: none;
+}
+
+/*
+  Create a root stacking context
+    reason: https://www.joshwcomeau.com/css/custom-css-reset/#digit-root-stacking-context
+*/
+#root {
+	isolation: isolate;
+}
+
+/*
+  Display reset
+    Reason: These shouldn't be needed but for convenience and ease of mind,
+            we'll reset the display value.
+*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+	display: block;
+}
+
+/*
+  Removes default styles from the anchor tag
+    reason: To not impinge on a component's styling, the anchor tag will be
+            treated as regular text.
+*/
+a {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	color: inherit;
+	text-decoration: inherit;
+}
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/*
+  A11y compliant animations
+    reason: We want to adhere to users which choose to toggle reductions of
+            motions ON on their OS - some people can get motion sick.
+            This reset removes all CSS animations if a user got this setting.
+*/
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}

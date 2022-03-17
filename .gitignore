@@ -8,6 +8,8 @@ node_modules
 # testing
 coverage
 
+dist
+
 # next.js
 .next/
 out/
@@ -31,3 +33,6 @@ yarn-error.log*
 
 # turbo
 .turbo
+
+# will have compiled files and executables
+**/target

@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "apps | web",
+			"path": "apps/web"
+		},
+		{
+			"name": "service | analytic core",
+			"path": "services/service_analytic_core"
+		},
+		{
+			"name": "_internals | packages",
+			"path": "packages"
+		},
+	],
+	"settings": {
+		"cSpell.words": [
+			"actix",
+			"stylesheet"
+		]
+	}
+}

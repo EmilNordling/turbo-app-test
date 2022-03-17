@@ -1,22 +1,22 @@
 {
 	"include": ["."],
-  "exclude": ["dist", "build", "node_modules"],
-  "compilerOptions": {
+	"exclude": ["dist", "build", "node_modules"],
+	"compilerOptions": {
 		"jsx": "react-jsx",
-    "target": "ESNext",
-    "module": "ESNext",
-    "types": [],
-    "moduleResolution": "Node",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "strict":                           true,
-    "noEmit":                           true,
-    "allowJs":                          false,
-    "skipLibCheck":                     false,
-    "isolatedModules":                  false, // This is only false due to incompatibilities with Jest and TS. See: https://vitejs.dev/guide/features.html#typescript
-    "esModuleInterop":                  false,
-    "resolveJsonModule":                true,
-    "useDefineForClassFields":          true,
-    "allowSyntheticDefaultImports":     true,
-    "forceConsistentCasingInFileNames": true,
-  },
+		"target": "ESNext",
+		"module": "ESNext",
+		"types": [],
+		"moduleResolution": "Node",
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"strict":                           true,
+		"noEmit":                           true,
+		"allowJs":                          false,
+		"skipLibCheck":                     false,
+		"isolatedModules":                  false, // This is only false due to incompatibilities with Jest and TS. See: https://vitejs.dev/guide/features.html#typescript
+		"esModuleInterop":                  false,
+		"resolveJsonModule":                true,
+		"useDefineForClassFields":          true,
+		"allowSyntheticDefaultImports":     true,
+		"forceConsistentCasingInFileNames": true,
+	}
 }

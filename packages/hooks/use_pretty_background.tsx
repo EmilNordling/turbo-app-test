@@ -1,17 +1,19 @@
-import { useEffect } from "react";
+import { useLayoutEffect } from 'react';
 
 /**
- *
+ * <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  */
 export function useStatusBarColor(color: string): void {
-  useEffect(() => {
-    const doc = document.documentElement;
-    const prev = doc.style.backgroundColor;
+	useLayoutEffect(() => {
+		const doc = document.body;
+		const prev = doc.style.backgroundColor;
 
-    doc.style.backgroundColor = color;
+		console.log(doc);
 
-    return () => {
-      doc.style.backgroundColor = prev;
-    };
-  }, []);
+		doc.style.backgroundColor = color;
+
+		return () => {
+			doc.style.backgroundColor = prev;
+		};
+	}, []);
 }

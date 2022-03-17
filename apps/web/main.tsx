@@ -1,10 +1,8 @@
-import "./_reset.css";
-import "./main.css";
-import { render } from "react-dom";
-import { App } from "./components/app.component";
-import { createResolutionContext } from "dependency_injection";
+import { createRoot } from 'react-dom/client';
+import { App } from './components/app.component';
+import { createResolutionContext } from 'dependency_injection';
 
-render(
-  <App resolutionContext={createResolutionContext()} />,
-  document.getElementById("root")
-);
+const container = document.getElementById('root') as HTMLElement;
+const root = createRoot(container);
+
+root.render(<App resolutionContext={createResolutionContext()} />);

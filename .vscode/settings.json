@@ -1,7 +1,9 @@
 {
-    "cSpell.words": [
-        "unplugin",
-        "Vite",
-        "vitejs"
-    ]
+  "vitest.commandLine": "pnpm run test",
+  "cSpell.words": [
+    "actix",
+    "unplugin",
+    "Vite",
+    "vitejs"
+  ]
 }

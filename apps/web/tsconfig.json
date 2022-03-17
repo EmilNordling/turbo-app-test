@@ -1,27 +1,27 @@
 {
 	"include": ["."],
-  "compilerOptions": {
+	"compilerOptions": {
 		"jsx": "react-jsx",
-    "target": "ESNext",
-    "module": "ESNext",
-    "types": ["vite/client", "unplugin-icons/types/react"],
-    "moduleResolution": "Node",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "strict":                           true,
-    "noEmit":                           true,
-    "allowJs":                          false,
-    "skipLibCheck":                     false,
-    "isolatedModules":                  false, // This is only false due to incompatibilities with Jest and TS. See: https://vitejs.dev/guide/features.html#typescript
-    "esModuleInterop":                  false,
-    "resolveJsonModule":                true,
-    "useDefineForClassFields":          true,
-    "allowSyntheticDefaultImports":     true,
-    "forceConsistentCasingInFileNames": true,
-    "experimentalDecorators":           true,
-  },
+		"target": "ESNext",
+		"module": "ESNext",
+		"types": ["vite/client", "unplugin-icons/types/react"],
+		"moduleResolution": "Node",
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"strict":                           true,
+		"noEmit":                           true,
+		"allowJs":                          false,
+		"skipLibCheck":                     false,
+		"isolatedModules":                  false, // This is only false due to incompatibilities with Jest and TS. See: https://vitejs.dev/guide/features.html#typescript
+		"esModuleInterop":                  false,
+		"resolveJsonModule":                true,
+		"useDefineForClassFields":          true,
+		"allowSyntheticDefaultImports":     true,
+		"forceConsistentCasingInFileNames": true,
+		"experimentalDecorators":           true
+	},
 	"paths": {
-		"@pages/*":      ["pages/*"],
-		"@modules/*":    ["modules/*"],
-		"@components/*": ["components/*"],
+		"@pages/*": ["pages/*"],
+		"@modules/*": ["modules/*"],
+		"@components/*": ["components/*"]
 	}
 }

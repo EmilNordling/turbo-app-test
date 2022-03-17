@@ -1,12 +1,12 @@
-import { injectable } from "dependency_injection";
+import { injectable } from 'dependency_injection';
 
 @injectable()
 export class Logger {
-  constructor() {
-    // Empty
-  }
+	constructor() {
+		// Empty
+	}
 
-  public log(message: string): void {
-    // xD
-  }
+	public log(message: string): void {
+		// xD
+	}
 }

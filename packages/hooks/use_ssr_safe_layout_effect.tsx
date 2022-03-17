@@ -1,4 +1,4 @@
-import { useLayoutEffect } from "react";
+import { useLayoutEffect } from 'react';
 
 /**
  * `useEffect` and `useLayoutEffect`are not meant to run on the server. To
@@ -7,9 +7,9 @@ import { useLayoutEffect } from "react";
  * See: https://reactjs.org/docs/hooks-reference.html#uselayouteffect
  */
 export const useSsrSafeLayoutEffect = (
-  globalThis?.document
-    ? useLayoutEffect
-    : () => {
-        // noop
-      }
+	globalThis?.document
+		? useLayoutEffect
+		: () => {
+				// noop
+		  }
 ) as typeof useLayoutEffect;
